@@ -1,0 +1,1181 @@
+{
+	"info": {
+		"_postman_id": "de844897-cfb9-414d-854d-efa7e1368b8e",
+		"name": "API Mobile",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Dashboard",
+			"item": [
+				{
+					"name": "API Mobile GO - Dashboard",
+					"id": "d6957235-6305-4c8c-af47-fb4f8eac0e6e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"userid\": 2,\r\n    \"userprofileid\": 10,\r\n    \"companyid\": 66144,\r\n    \"currentreadonly\": false,\r\n    \"peopleid\": 0,\r\n    \"login\":\"apimobilept@apimobilept.com\",\r\n    \"licenseid\":\"E5E1C1E9-9C70-406C-A4D7-BA2DCB644B76\"\r\n}\r\n\r\n\r\n\r\n// dscarpim@empro.com.br\t389717\r\n// rh@construtoragma.com.br\t516477\r\n\r\n\r\n// apimobilemd@apimobilemd.com 495231\r\n\r\n// apimobilept@apimobilept.com 66144\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://qcmaint.apimobile.dimepkairos.pt/api/MobileApp/Dashboard"
+					},
+					"response": [
+						{
+							"id": "80d4d96a-47ea-4578-87e4-dc9a078f5b2e",
+							"name": "API Mobile GO - Dashboard",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{    \r\n    \"userid\": 7,\r\n    \"userprofileid\": 7,\r\n    \"companyid\": 526599,\r\n    \"currentreadonly\": false,\r\n    \"peopleid\": 5,\r\n    \"login\":\"pessoa1004@sust15092022.com\",\r\n    \"licenseid\":\"0e977902-b062-4c3b-98f1-da90b63a4c54\"\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://qcmaint.apimobile.dimepkairos.com.br:8071/api/MobileApp/Dashboard"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 19 Sep 2022 16:50:25 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "723"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"NumberOfMessages\": 0,\n    \"NumberOfRequests\": 21,\n    \"NumberOfInconsistencies\": 7,\n    \"Matricula\": 1004,\n    \"Cracha\": 1004,\n    \"HasDelay1\": true,\n    \"HasDelay2\": true,\n    \"HasDelay3\": true,\n    \"LimitDelay1\": \"00:03\",\n    \"LimitDelay2\": \"00:05\",\n    \"LimitDelay3\": \"00:07\",\n    \"NumberOfDelayLimit1\": 0,\n    \"NumberOfDelayLimit2\": 0,\n    \"NumberOfDelayLimit3\": 0,\n    \"HasExtra1\": true,\n    \"HasExtra2\": true,\n    \"HasExtra3\": true,\n    \"HasExtra4\": true,\n    \"HasExtra5\": true,\n    \"LimitExtra1\": \"00:05\",\n    \"LimitExtra2\": \"00:05\",\n    \"LimitExtra3\": \"00:05\",\n    \"LimitExtra4\": \"00:05\",\n    \"LimitExtra5\": \"00:05\",\n    \"NumberOfExtraLimit1\": 0,\n    \"NumberOfExtraLimit2\": 1,\n    \"NumberOfExtraLimit3\": 1,\n    \"NumberOfExtraLimit4\": 0,\n    \"NumberOfExtraLimit5\": 0,\n    \"HasLimitBank\": true,\n    \"LimitBank\": \"01:00\",\n    \"NumberOfLimitBank\": 0,\n    \"LastMark\": \"2022-09-16T10:44:00\",\n    \"ForceLogout\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "API Mobile webservice - Dashboard",
+					"id": "7d5ff527-7be1-4e82-b726-835312c637cb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"userid\": 7,\r\n    \"userprofileid\": 7,\r\n    \"companyid\": 526599,\r\n    \"currentreadonly\": false,\r\n    \"peopleid\": 5,\r\n    \"login\":\"pessoa1004@sust15092022.com\",\r\n    \"licenseid\":\"0e977902-b062-4c3b-98f1-da90b63a4c54\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://qcmaint.dimepkairos.com.br/api/mobileapp/dashboard"
+					},
+					"response": []
+				}
+			],
+			"id": "4767f796-0105-4b9a-929a-94112fa714d1"
+		},
+		{
+			"name": "API Returns",
+			"item": [
+				{
+					"name": "API Mobile GO - Retorna Versao Interna Aplicacao",
+					"id": "12aab025-09dc-4f9e-9d87-566bfd22a743",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://qcmaint.apimobile.dimepkairos.com.br/version"
+					},
+					"response": []
+				},
+				{
+					"name": "API Mobile GO - Retorna Versao Aplicacao",
+					"id": "7411e89f-f7e3-4af2-86a7-224862578055",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://qcmaint.apimobile.dimepkairos.com.br/v"
+					},
+					"response": []
+				},
+				{
+					"name": "API Mobile GO - Retorna Disponibilidade API",
+					"id": "0f1ccf7a-251a-43e3-a952-3bbcc54eba22",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://qcmaint.apimobile.dimepkairos.com.br/"
+					},
+					"response": []
+				}
+			],
+			"id": "ab2cb369-e8cc-43da-af09-0c69ec9d8db7"
+		},
+		{
+			"name": "API Mobile Go",
+			"item": [
+				{
+					"name": "api/MobileApp/Mark",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"if(pm.request.body && pm.request.body.raw) pm.request.body.raw = pm.request.body.raw.replace(/\\/\\*[\\s\\S]*?\\*\\/|\\/\\/.*/g,'');"
+								],
+								"type": "text/javascript",
+								"id": "4ff20d6f-6855-4a13-9787-3468901e5326"
+							}
+						}
+					],
+					"id": "8f1baba3-d023-46f1-b3ab-64fa3e8a8251",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "identifier",
+								"value": "46249531000202",
+								"type": "text"
+							},
+							{
+								"key": "key",
+								"value": "ef33394a-c31b-4480-94ba-d066c2af5b71",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "//Exemplo para o Postman utilizando o formato (\"yyyy-MM-ddThh:mm:ss.tttZ\")\r\n\r\n{\r\n  \"Badge\": 1,\r\n  \"CompanyId\": 523955,\r\n  \"CurrentReadOnly\": false,\r\n  \"Date\": \"2023-01-17T21:00:00.000Z\",\r\n  \"Face\": \"\",\r\n  \"GPSRequired\": false,\r\n  \"IdPeople\": 1,\r\n  \"IdProject\": 0,\r\n  \"Key\": \"6763f258-3b55-4aaf-a598-9099788fafe9\",\r\n  \"Latitude\": \"-23.5889586\",\r\n  \"LatitudeBase\": \"-23.5889586\",\r\n  \"Longitude\": \"-46.7698268\",\r\n  \"LongitudeBase\": \"-46.7698268\",\r\n  \"MultipleLogin\": false,\r\n  \"Offline\": false,\r\n  \"SmartTagRequired\": false,\r\n  \"SmartTags\": [\r\n    {\r\n      \"MAC\": \"64:07:F6:C0:4F:81\",\r\n      \"Rssi\": 0,\r\n      \"TxPower\": 0\r\n    }\r\n  ],\r\n  \"UserId\": 2,\r\n  \"UserProfileId\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://qcmaint.apimobile.mdcomune.com.br/api/MobileApp/Mark"
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/Inconsistencies",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"if(pm.request.body && pm.request.body.raw) pm.request.body.raw = pm.request.body.raw.replace(/\\/\\*[\\s\\S]*?\\*\\/|\\/\\/.*/g,'');"
+								],
+								"type": "text/javascript",
+								"id": "8763ae67-f53f-4950-b55a-7ce82048bf25"
+							}
+						}
+					],
+					"id": "a0058b15-efcd-4dd1-8f87-be101e02adc6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"UserId\": 2,\r\n    \"UserProfileId\": 0,\r\n    \"CompanyId\": 66144,\r\n    \"CurrentReadOnly\": false,\r\n    \"Tab\": 1,\r\n    \"Page\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://qcmaint.apimobile.dimepkairos.pt/api/MobileApp/Inconsistencies"
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/Assiduity",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"if(pm.request.body && pm.request.body.raw) pm.request.body.raw = pm.request.body.raw.replace(/\\/\\*[\\s\\S]*?\\*\\/|\\/\\/.*/g,'');"
+								],
+								"type": "text/javascript",
+								"id": "b81af64d-4757-47dd-82af-cc7398388ee4"
+							}
+						}
+					],
+					"id": "a8f79f77-898a-46f6-a299-37bff78216b3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "// Este método é para o detalhamento da Assiduidade, utiliza a monitoração.\r\n\r\n{\r\n    \"UserId\": 2,\r\n    \"UserProfileId\": 10,\r\n    \"CompanyId\": 523955,\r\n    \"CurrentReadOnly\": false,\r\n    \"Tab\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://qcmaint.apimobile.dimepkairos.com.br/api/MobileApp/Assiduity"
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/Contacts",
+					"id": "d477da69-72c9-485b-9fac-d0e428b49afc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"UserId\": 0,\r\n    \"UserProfileId\": 0,\r\n    \"CompanyId\": 523955,\r\n    \"CurrentReadOnly\": false,\r\n    \"PeopleId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://qcmaint.apimobile.dimepkairos.com.br/api/MobileApp/Contacts"
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/Companies",
+					"id": "8d692081-7ccd-4437-9c91-d991bc83a7b0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"userid\": 2,\r\n    \"userprofileid\": 0,\r\n    \"companyid\": 523955,\r\n    \"currentreadonly\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://qcmaint.apimobile.dimepkairos.com.br/api/MobileApp/Companies"
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/GetStructure",
+					"id": "b51e04e4-0987-4f0d-b02f-ea7641af6325",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://qcmaint.apimobile.mdcomune.com.br/api/MobileApp/GetStructure?idEmpresa=495231&userId=2",
+							"protocol": "http",
+							"host": [
+								"qcmaint",
+								"apimobile",
+								"mdcomune",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"MobileApp",
+								"GetStructure"
+							],
+							"query": [
+								{
+									"key": "idEmpresa",
+									"value": "495231"
+								},
+								{
+									"key": "userId",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/GetLastCode",
+					"id": "87c718f8-ede5-4e62-ab78-0f36b00dd581",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://qcmaint.apimobile.dimepkairos.com.br/api/MobileApp/GetLastCode?idEmpresa=523955",
+							"protocol": "http",
+							"host": [
+								"qcmaint",
+								"apimobile",
+								"dimepkairos",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"MobileApp",
+								"GetLastCode"
+							],
+							"query": [
+								{
+									"key": "idEmpresa",
+									"value": "523955"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/NewSmartTag",
+					"id": "ce57972f-ac14-4dc4-b352-80a5122ab58e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"UserId\": 2,\r\n    \"UserProfileId\": 0,\r\n    \"CompanyId\": 66144,\r\n    \"CurrentReadOnly\": false,\r\n    \"Estrutura\": 2,\r\n    \"Codigo\":2,\r\n    \"Descricao\":\"teste api 2\",\r\n    \"MAC\":\"64:07:F6:C0:4F:8f\",\r\n    \"Rssi\":0,\r\n    \"TxPower\":0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://qcmaint.apimobile.dimepkairos.pt/api/MobileApp/NewSmartTag"
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/Pair",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"if(pm.request.body && pm.request.body.raw) pm.request.body.raw = pm.request.body.raw.replace(/\\/\\*[\\s\\S]*?\\*\\/|\\/\\/.*/g,'');"
+								],
+								"type": "text/javascript",
+								"id": "91121837-94db-4b03-a3b4-7978f8faab99"
+							}
+						}
+					],
+					"id": "81fc1edd-6aa3-4a83-84f9-ae56b69441d2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " //Busca de status da chave de emparelhamento e ativação da chave tambem\r\n \r\n \r\n {\r\n    \"UserId\": 2,\r\n    \"UserProfileId\": 10,\r\n    \"CompanyId\": 523955,\r\n    \"CurrentReadOnly\": false,\r\n    \"IdPeople\": 1,\r\n    \"key\":\"bea53010-d815-4a3c-b31b-d629230421ee\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://qcmaint.apimobile.dimepkairos.com.br/api/MobileApp/Pair"
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/GetLastCode",
+					"id": "0eebba64-e6fc-4a56-b709-51be95e712aa",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://qcmaint.apimobile.mdcomune.com.br/api/MobileApp/GetLastCode?idEmpresa=495231",
+							"protocol": "http",
+							"host": [
+								"qcmaint",
+								"apimobile",
+								"mdcomune",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"MobileApp",
+								"GetLastCode"
+							],
+							"query": [
+								{
+									"key": "idEmpresa",
+									"value": "495231"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/CompanyWithAccess",
+					"id": "e0a41c14-8d7f-46ba-b83a-d1df9b03ec45",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://qcmaint.apimobile.dimepkairos.com.br/api/MobileApp/CompanyWithAccess?login=apimobile@apimobile.com&id=2",
+							"protocol": "http",
+							"host": [
+								"qcmaint",
+								"apimobile",
+								"dimepkairos",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"MobileApp",
+								"CompanyWithAccess"
+							],
+							"query": [
+								{
+									"key": "login",
+									"value": "apimobile@apimobile.com"
+								},
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/MarkMessageAsRead",
+					"id": "dcde7ee7-4415-4ece-ae1e-8c820d19d955",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://qcmaint.apimobile.dimepkairos.pt/api/MobileApp/MarkMessageAsRead?id={AAAC9F99-DEAE-4B58-88E0-3A4EF096FA5B}",
+							"protocol": "http",
+							"host": [
+								"qcmaint",
+								"apimobile",
+								"dimepkairos",
+								"pt"
+							],
+							"path": [
+								"api",
+								"MobileApp",
+								"MarkMessageAsRead"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "{AAAC9F99-DEAE-4B58-88E0-3A4EF096FA5B}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/Messages",
+					"id": "933a0758-cc67-4996-b14c-247899b102f0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"UserId\": 3,\r\n    \"UserProfileId\": 10,\r\n    \"CompanyId\": 66144,\r\n    \"CurrentReadOnly\": false,\r\n    \"Login\":\"apimobilept@apimobilept.com\",\r\n    \"LicenseId\":\"AAAC9F99-DEAE-4B58-88E0-3A4EF096FA5B\",\r\n    \"Tab\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://qcmaint.apimobile.dimepkairos.pt/api/MobileApp/Messages"
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/GetMessageById",
+					"id": "e186031f-c183-4b73-89b5-f05547afdb57",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://qcmaint.apimobile.dimepkairos.pt/api/MobileApp/GetMessageById?id={AAAC9F99-DEAE-4B58-88E0-3A4EF096FA5B}",
+							"protocol": "http",
+							"host": [
+								"qcmaint",
+								"apimobile",
+								"dimepkairos",
+								"pt"
+							],
+							"path": [
+								"api",
+								"MobileApp",
+								"GetMessageById"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "{AAAC9F99-DEAE-4B58-88E0-3A4EF096FA5B}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/GetJustifications",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"if(pm.request.body && pm.request.body.raw) pm.request.body.raw = pm.request.body.raw.replace(/\\/\\*[\\s\\S]*?\\*\\/|\\/\\/.*/g,'');"
+								],
+								"type": "text/javascript",
+								"id": "92978a68-2232-440a-954f-4e3debaa3c2e"
+							}
+						}
+					],
+					"id": "773d2c40-1ade-42f1-ab81-56b6250d898e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "//Irá trazer somente as justifcativas do tipo DESCONTO e marcada a flag \" Utilizada para funcionário/gestor \"\r\n\r\n{\r\n    \"UserId\": 0,\r\n    \"UserProfileId\": 0,\r\n    \"CompanyId\": 495231,\r\n    \"CurrentReadOnly\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://qcmaint.apimobile.mdcomune.com.br/api/MobileApp/GetJustifications"
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/GetJustificationsDelay",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"if(pm.request.body && pm.request.body.raw) pm.request.body.raw = pm.request.body.raw.replace(/\\/\\*[\\s\\S]*?\\*\\/|\\/\\/.*/g,'');"
+								],
+								"type": "text/javascript",
+								"id": "606465f5-26f2-4b9d-ae64-33fa147d081b"
+							}
+						}
+					],
+					"id": "b6b8ddc5-4182-43d8-bf7f-e69b5d706fe6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "//Irá trazer somente as justifcativas do tipo DESCONTO\r\n\r\n{\r\n    \"UserId\": 0,\r\n    \"UserProfileId\": 0,\r\n    \"CompanyId\": 523955,\r\n    \"CurrentReadOnly\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://qcmaint.apimobile.dimepkairos.com.br/api/MobileApp/GetJustificationsDelay"
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/LimitBank",
+					"id": "8df8b745-da79-4cff-9b23-c25b884f2282",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"UserId\": 2,\r\n    \"UserProfileId\": 10,\r\n    \"CompanyId\": 523955,\r\n    \"CurrentReadOnly\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://qcmaint.apimobile.dimepkairos.com.br/api/MobileApp/LimitBank"
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/UsingNewAPI",
+					"id": "bf92a86e-8e98-432e-8f8f-045225524802",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://apimobile.mdcomune.com.br/api/MobileApp/UsingNewAPI"
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/PlannedAbsence",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"id": "fce48079-1af8-4157-85e8-ada30a4b886c"
+							}
+						}
+					],
+					"id": "35519846-b059-4e5e-96f4-c331389fa0ab",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"userid\": 2,\r\n    \"userprofileid\": 10,\r\n    \"companyid\": 527603,\r\n    \"currentreadonly\": false,\r\n    \"CurrentDate\": \"2023-03-01 00:00:00.000\"\r\n    \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://qcmaint.apimobile.dimepkairos.com.br/api/MobileApp/PlannedAbsence"
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/Holidays",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"id": "6fb333ee-23ca-4452-b0a0-a9739633ec29"
+							}
+						}
+					],
+					"id": "9b387a93-1983-48f8-baa7-2973f8f4df7a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "// validar os funcionarios que estão em férias na data atual\r\n// o campo \"CurrentDate\" deve ser preenchido com a data atual respeitando a formatação aaaa-MM-dd\r\n\r\n{    \r\n    \"userid\": 2,\r\n    \"userprofileid\": 10,\r\n    \"companyid\": 68263,\r\n    \"currentreadonly\": false,\r\n    \"CurrentDate\": \"2023-03-01 00:00:00.000\",\r\n    \"AppManager\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://qcmaint.apimobile.dimepkairos.pt/api/MobileApp/Holidays"
+					},
+					"response": []
+				}
+			],
+			"id": "e6c0c7d1-1eee-47ec-8ee6-d921d6ec0ca8"
+		},
+		{
+			"name": "API Mobile Webservice",
+			"item": [
+				{
+					"name": "api/mobileapp/companies",
+					"id": "aef07284-28c7-429f-b7ef-d6349e67194e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"userid\": 2,\r\n    \"userprofileid\": 1,\r\n    \"companyid\": 518079,\r\n    \"currentreadonly\": false\r\n}"
+						},
+						"url": "http://192.168.15.134:8060/api/mobileapp/companies"
+					},
+					"response": []
+				},
+				{
+					"name": "api/mobileapp/pair",
+					"id": "7f70ad77-10c5-49bc-bff5-ca7a74d6b527",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {    \r\n    \"UserId\": 4,\r\n    \"UserProfileId\": 9,\r\n    \"CompanyId\": 363080,\r\n    \"CurrentReadOnly\": false,\r\n    \"IdPeople\": 99,\r\n    \"key\":\"6e6681c1-33cb-4d54-9ea4-9c50f43d3819\"\r\n}\r\n"
+						},
+						"url": "http://192.168.15.134:8060/api/mobileapp/pair"
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/Contacts",
+					"id": "6ebcae29-26e2-4c80-995e-e0629253f187",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"UserId\": 4017,\r\n    \"UserProfileId\": 12,\r\n    \"CompanyId\": 501048,\r\n    \"CurrentReadOnly\": false,\r\n    \"PeopleId\": 1008\r\n}"
+						},
+						"url": "http://192.168.0.19:8060/api/MobileApp/Contacts"
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/Company",
+					"id": "f1470e8f-54a2-4ce8-87b7-2b8d4880a776",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://192.168.0.7:8060/api/MobileApp/CompanyWithAccess?login=exemplo@exemplo.com.br&id=2",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"7"
+							],
+							"port": "8060",
+							"path": [
+								"api",
+								"MobileApp",
+								"CompanyWithAccess"
+							],
+							"query": [
+								{
+									"key": "login",
+									"value": "exemplo@exemplo.com.br"
+								},
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/NewSmartTag",
+					"id": "1e3032f3-e1d0-4c0e-bc90-3a9773ca1376",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {    \r\n    \"UserId\": 4,\r\n    \"UserProfileId\": 10000,\r\n    \"CompanyId\": 519124,\r\n    \"CurrentReadOnly\": false,\r\n    \"Estrutura\": 1,\r\n    \"Codigo\":9,\r\n    \"Descricao\":\"teste 8\",\r\n    \"MAC\":\"64:07:F6:C0:4F:8B\",\r\n    \"Rssi\":0,\r\n    \"TxPower\":0\r\n}\r\n"
+						},
+						"url": "http://192.168.0.7:8060/api/MobileApp/NewSmartTag"
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/GetLastCode",
+					"id": "cb2357eb-fccb-4bcd-a95e-755e86c294e4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://192.168.0.19:8060/api/MobileApp/GetLastCode?idEmpresa=501048",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"19"
+							],
+							"port": "8060",
+							"path": [
+								"api",
+								"MobileApp",
+								"GetLastCode"
+							],
+							"query": [
+								{
+									"key": "idEmpresa",
+									"value": "501048"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/GetStructure",
+					"id": "cbedce88-fcd9-4d84-9a26-34691186439d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.7:8060/api/MobileApp/GetStructure?idEmpresa=494104&userId=2",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"7"
+							],
+							"port": "8060",
+							"path": [
+								"api",
+								"MobileApp",
+								"GetStructure"
+							],
+							"query": [
+								{
+									"key": "idEmpresa",
+									"value": "494104"
+								},
+								{
+									"key": "userId",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/Assiduity",
+					"id": "2a2a5218-b344-419b-afc9-68e8e5c6388a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"UserId\": 2,\r\n    \"UserProfileId\": 1,\r\n    \"CompanyId\": 518079,\r\n    \"CurrentReadOnly\": false,\r\n    \"Tab\": 14\r\n}\r\n"
+						},
+						"url": "http://192.168.0.7:8060/api/MobileApp/Assiduity"
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/Inconsistencies",
+					"id": "a6416f1d-a741-4a77-a67f-b548ea58ce00",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"UserId\": 8751,\r\n    \"UserProfileId\": 13,\r\n    \"CompanyId\": 363080,\r\n    \"CurrentReadOnly\": false,\r\n\t\"Tab\": 1,\r\n\t\"Page\": 1\r\n}\r\n"
+						},
+						"url": "http://192.168.0.7:8060/api/MobileApp/Inconsistencies"
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/ProcessHolidayRequest",
+					"id": "0df4a0f9-a875-4fee-8ab2-99733e86251f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"UserId\": 2,\r\n    \"UserProfileId\": 5,\r\n    \"CompanyId\": 501048,\r\n    \"CurrentReadOnly\": false,\r\n\t\"Request\": {\r\n    \"IdPedido\": 2,\r\n    \"IdPeople\": 2,\r\n    \"Matricula\": 2,\r\n\t\"Nome\": \"nome\",\r\n\t\"Estrutura\": \"estrutura\",\r\n\t\"Dia\": \"01\",\r\n\t\"DataRequisicao\": \"2022-07-26 09:00:00\",\r\n\t\"DataSolicitada\": \"2022-07-26 09:00:00\",\r\n\t\"DataValidade\": null,\r\n    \"IdRegraAprovacao\": null,\r\n\t\"Motivo\": \"Motivo\",\r\n    \"Status\": 5\r\n    },\r\n\t\"Status\": 0,\r\n\t\"CompanyCountry\": \"BR\",\r\n\t\"Url\": \"url@url.com\",\r\n\t\"HasWidgetModule\": false,\r\n\t\"HasWorkForceModule\": false\r\n}\r\n"
+						},
+						"url": "http://192.168.0.7:8060/api/MobileApp/ProcessHolidayRequest"
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/ProcessMarkRequest",
+					"id": "90f2b34b-e832-462d-800d-2986e78991d2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"UserId\": 2,\r\n    \"UserProfileId\": 5,\r\n    \"CompanyId\": 501048,\r\n    \"CurrentReadOnly\": false,\r\n\t\"Request\": {\r\n\t\t\"IdPedido\": 2,\r\n\t\t\"IdPeople\": 2,\r\n\t\t\"Matricula\": 2,\r\n\t\t\"Nome\": \"nome\",\r\n\t\t\"Estrutura\": \"estrutura\",\r\n\t\t\"Dia\": \"01\",\r\n\t\t\"DataRequisicao\": \"2022-07-26 09:00:00\",\r\n\t\t\"DataSolicitada\": \"2022-07-26 09:00:00\",\r\n\t\t\"DataValidade\": null,\r\n\t\t\"IdRegraAprovacao\": null,\r\n\t\t\"Marcacao\": \"2022-07-26 09:00:00\",\r\n\t\t\"MarcacaoAprovada\": \"2022-07-26 09:00:00\",\r\n\t\t\"Motivo\": \"Motivo\",\r\n\t\t\"Status\": 5\r\n    },\r\n\t\"Url\": \"url@url.com\",\r\n\t\"HasWidgetModule\": false,\r\n\t\"HasWorkForceModule\": false\r\n}"
+						},
+						"url": "http://192.168.0.7:8060/api/MobileApp/ProcessMarkRequest"
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/ProcessExtraRequest",
+					"id": "c80883b9-1c83-42d6-a717-694533ea2dab",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/ecmascript",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"UserId\": 2,\r\n    \"UserProfileId\": 5,\r\n    \"CompanyId\": 501048,\r\n    \"CurrentReadOnly\": false,\r\n\t\"Request\": {\r\n\t\t\"IdPedido\": 2,\r\n\t\t\"IdPeople\": 2,\r\n\t\t\"Matricula\": 2,\r\n\t\t\"Nome\": \"nome\",\r\n\t\t\"Estrutura\": \"estrutura\",\r\n\t\t\"Dia\": \"01\",\r\n\t\t\"DataRequisicao\": \"2022-07-26 09:00:00\",\r\n\t\t\"DataValidade\": null,\r\n\t\t\"IdRegraAprovacao\": null,\r\n\t\t\"QtdHorasRequisitada\": \"11\",\r\n\t\t\"QtdHorasAprovada\": \"11\",\r\n\t\t\"Motivo\": \"Motivo\",\r\n\t\t\"Status\": 5\r\n    },\r\n\t\"Url\": \"url@url.com\",\r\n\t\"HasWidgetModule\": false,\r\n\t\"HasWorkForceModule\": false\r\n}\r\n"
+						},
+						"url": "http://192.168.0.7:8060/api/MobileApp/ProcessExtraRequest"
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/ProcessDelayRequest",
+					"id": "ab068370-0d6b-4256-ab21-e658cc99aec2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"UserId\": 2,\r\n    \"UserProfileId\": 5,\r\n    \"CompanyId\": 501048,\r\n    \"CurrentReadOnly\": false,\r\n\t\"Request\": {\r\n\t\t\"IdPedido\": 2,\r\n\t\t\"IdPeople\": 2,\r\n\t\t\"Matricula\": 2,\r\n\t\t\"Nome\": \"nome\",\r\n\t\t\"Estrutura\": \"estrutura\",\r\n\t\t\"Dia\": \"2022-07-26 09:00:00\",\r\n\t\t\"Data\": \"2022-07-26 09:00:00\",\r\n\t\t\"DataValidade\": null,\r\n\t\t\"IdRegraAprovacao\": null,\r\n\t\t\"HorasJustificadas\": \"11\",\r\n\t\t\"Horas\": \"11\",\r\n\t\t\"IdJustificativa\": 5,\r\n\t\t\"Justificativa\": \"Justificativa\",\r\n\t\t\"Descricao\": \"Descricao\",\r\n\t\t\"Status\": 5,\r\n\t\t\"Tipo\": 5,\r\n\t\t\"PossuiDocumento\": true,\r\n\t\t\"TransferenciaBH\": \"Banco de Horas\"\r\n    },\r\n\t\"Status\": 1,\r\n\t\"Url\": \"url@url.com\",\r\n\t\"HasWidgetModule\": false,\r\n\t\"HasWorkForceModule\": false\r\n}\r\n"
+						},
+						"url": "http://192.168.0.7:8060/api/MobileApp/ProcessDelayRequest"
+					},
+					"response": []
+				},
+				{
+					"name": "api/MobileApp/GetMessageById",
+					"id": "af78bc9e-632c-462f-ae7d-10e11725a4ab",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.7:8060/api/MobileApp/GetMessageById?id={13E779DE-806B-4FB1-A25D-3B7DB9A7F108}",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"7"
+							],
+							"port": "8060",
+							"path": [
+								"api",
+								"MobileApp",
+								"GetMessageById"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "{13E779DE-806B-4FB1-A25D-3B7DB9A7F108}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "9ce82855-0419-407b-99b9-58c200eded6d"
+		}
+	]
+}
