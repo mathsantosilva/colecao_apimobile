@@ -1,0 +1,258 @@
+{
+	"info": {
+		"_postman_id": "fa410637-ad6f-4576-87e6-fdae074575a2",
+		"name": "API Store",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AlterEntityModules",
+			"id": "023e5ac5-7209-46cf-b52f-ad5fd04061af",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "key",
+						"value": "bcdc21ad-8d7d-4eeb-b100-b52096162b8d",
+						"type": "text"
+					},
+					{
+						"key": "identifier",
+						"value": "Vindi",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"EntityCnpj\": \"31.960.317/0001-01\",\r\n\t\"modulesStringPlan\": \"7C6C4B9B-8985-4E94-BBAD-14EC442FB95F,A49E671B-342E-4A4B-8CB0-285B9D6E5EC6,816C8338-9479-4614-913B-2BE00D48E4F8,50142FB5-7444-43CA-9E53-2D8295657F82,5FDE9C47-FA83-41E0-BFFD-331C29B65AE2,C5E97BA2-1B66-4723-AF28-352C9BC46895,AC06ACC8-038B-45E0-88F7-37647458B4D6,B2C37F9E-5433-4556-AE85-3C481C941C4A,DF4A0850-F3B1-4D0D-B995-3C92B45B2DE5,51431C01-F817-4244-8BA1-4636F9253EB1,DC1CB4F0-A0A7-4518-9018-4834CC16334B,205A11C7-D8FB-48B1-9496-4A18DDDCC28A,757A6606-6B38-4587-B4CE-510E859FB67A,8ED99C55-DC17-499A-9E57-5255C05FB679,5EA42F57-832F-45E1-97AC-53049592C800,2D034483-E48B-4577-BD33-55037B902F38,51FB1249-E8A6-42C5-98A4-582D961D3361,C6DA0771-19DC-4460-AEE3-5E584C45295F,43EA3EED-C148-4B73-B864-0117D1AC4440,05717070-A1B5-4009-BD26-00F96248266C\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/RestServiceApi/RestEntity/AlterEntityModules"
+			},
+			"response": []
+		},
+		{
+			"name": "AlterLicenseStatus",
+			"id": "a73bee97-afcb-4363-8e35-1d97b6ecf181",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "key",
+						"value": "bcdc21ad-8d7d-4eeb-b100-b52096162b8d",
+						"type": "text"
+					},
+					{
+						"key": "identifier",
+						"value": "Vindi",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"EntityCnpj\": \"31.960.317/0001-01\",\r\n\t\"StatusLicense\": \"0\", //0 ativo, 1 inativo\r\n\t\"DateToInativity\": \"26/05/2021\" //Deixar vazio se for ativação\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/RestServiceApi/RestEntity/AlterLicenseStatus"
+			},
+			"response": []
+		},
+		{
+			"name": "RegisterEntity",
+			"id": "69d30eeb-cba4-40b4-8e91-c084b440a7c2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "key",
+						"value": "bcdc21ad-8d7d-4eeb-b100-b52096162b8d",
+						"type": "text"
+					},
+					{
+						"key": "identifier",
+						"value": "Vindi",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"emailUser\": \"1005@br3t.com\",\r\n\t\"passUser\": \"123\",\r\n\t\"nameUser\": \"1005\",\r\n    //\"cpfUser\": \"32591436533\",\r\n    \"emailEntity\": \"1005@br3t.com.br\",\r\n\t\"nameEntity\": \"1005\",\r\n\t\"CNPJEntity\": \"85160152628\",\r\n    \"businessRulesEntity\": \"FC109DBF-583C-4F40-A392-31AB69E71476\",\r\n    \"ramoCodigoEntity\": 1,\r\n\t\"portariaEntity\": \"false\",\r\n    //\"portaria671Entity\": \"false\",\r\n\t\"namePlan\": \"teste\",\r\n\t\"pricePlan\": 0,\r\n\t\"perfilNoSoftwarePlan\": 10,\r\n    \"durantionDaysPlan\": 150,\r\n\t\"numUsersPlan\": 120,\r\n\t\"numPeoplePlan\": 120,\r\n\t\"numEntitiesPlan\": 120,\r\n    \"expiredMessagePlan\": \"teste\",\r\n\t\"inactivatedMessagePlan\": \"teste\",\r\n\t\"isTrialPlan\": \"false\",\r\n    \"modulesStringPlan\": \"2a2a90d2-297d-4203-ac98-7b75c5e0723c\",\r\n    \"addressEntity\": \"Rj 1\",\r\n    \"cepEntity\": \"20000-000\",\r\n\t\"districtEntity\": \"Longe\",\r\n    \"phoneEntity\": \"11888888888\",\r\n    \"phoneUser\": \"1111111111\",\r\n    \"UFEntity\": \"RJ\",\r\n    \"cityEntity\": \"Rio de Janeiro\"\r\n}"
+				},
+				"url": "{{baseUrl}}/store/RestServiceApi/RestEntity/RegisterEntity"
+			},
+			"response": []
+		},
+		{
+			"name": "AlterEntityPlan",
+			"id": "1b6958ae-0a86-447f-95e4-f8f738ed54ae",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "key",
+						"value": "bcdc21ad-8d7d-4eeb-b100-b52096162b8d",
+						"type": "text"
+					},
+					{
+						"key": "identifier",
+						"value": "Vindi",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"EntityCnpj\": \"17343129000103\",\r\n\t\"namePlan\": \"performance 3\",\r\n\t\"pricePlan\": 0,\r\n\t\"perfilNoSoftwarePlan\": 11,\r\n    \"durantionDaysPlan\": 160,\r\n\t\"numUsersPlan\": 130,\r\n\t\"numPeoplePlan\": 140,\r\n\t\"numEntitiesPlan\": 150,\r\n    \"expiredMessagePlan\": \"teste\",\r\n\t\"inactivatedMessagePlan\": \"teste2\",\r\n\t\"isTrialPlan\": \"false\",\r\n\t\"modulesStringPlan\": \"2a2a90d2-297d-4203-ac98-7b75c5e0723c\"\r\n}"
+				},
+				"url": "{{baseUrl}}/store/RestServiceApi/RestEntity/AlterEntityPlan"
+			},
+			"response": []
+		},
+		{
+			"name": "AlterEntity",
+			"id": "3ff815b9-6697-4686-86a3-ee090d2a0871",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "key",
+						"value": "bcdc21ad-8d7d-4eeb-b100-b52096162b8d",
+						"type": "text"
+					},
+					{
+						"key": "identifier",
+						"value": "Vindi",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"EntityCnpj\": \"19160207000151\",\r\n\t\"nameEntity\": \"teste tsete 19160207000151 hghg\", //Deixar vazio ou não mandar o parâmetro se não houver alteração\r\n\t\"ramoCodigoEntity\": 0, //Deixar 0 caso não\r\n\t\"portariaEntity\": , //Deixar vazio ou não mandar o parâmetro se não houver alteração\r\n    \"portaria671Entity\":,\r\n    \"InitialPeriodDateEntity\": \"\" //Deixar vazio ou não mandar o parâmetro se não houver alteração, formato dd/mm/yyyy\r\n    //\"cpfUser\": \"98621226685\"\r\n}"
+				},
+				"url": "{{baseUrl}}/store/RestServiceApi/RestEntity/AlterEntity"
+			},
+			"response": []
+		},
+		{
+			"name": "CheckEntityExistence",
+			"id": "0083cdf6-1418-487a-aa45-611376cc3cd9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "key",
+						"value": "bcdc21ad-8d7d-4eeb-b100-b52096162b8d",
+						"type": "text"
+					},
+					{
+						"key": "identifier",
+						"value": "Vindi",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"EntityCnpj\": \"31.960.317/0001-01\"\r\n}"
+				},
+				"url": "{{baseUrl}}/RestServiceApi/RestEntity/CheckEntityExistence"
+			},
+			"response": []
+		},
+		{
+			"name": "SimpleRegisterEntity",
+			"id": "cb041ba2-4e51-489d-9d10-2d3bcf0dbb2c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "key",
+						"value": "bcdc21ad-8d7d-4eeb-b100-b52096162b8d",
+						"type": "text"
+					},
+					{
+						"key": "identifier",
+						"value": "Vindi",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"emailUser\": \"teste865497@dimep.com.br\",\r\n\t\"nameEntity\": \"Empresa de teste - api simples - 09-05-2023 - 16:05\",\r\n\t\"CNPJEntity\": \"55199316000146\",\r\n    \"phoneEntity\": \"111111111111\",\r\n    \"cpfUser\": \"88222978063\"\r\n\t// \"namePlan\": \"Teste de criação  de empresas - nova api\"\r\n\t//\"pricePlan\": 0, opcional\r\n    //\"durantionDaysPlan\": 150, opcional\r\n\t//\"numUsersPlan\": 120, opcional\r\n\t//\"numPeoplePlan\": 120, opcional\r\n\t//\"numEntitiesPlan\": 120, opcional\r\n\t//\"modulesStringPlan\": \"27161641-5f03-4180-aca2-0dc598b1f3ec\" opcional\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/store/RestServiceApi/RestEntity/SimpleRegisterEntity"
+			},
+			"response": []
+		}
+	]
+}
